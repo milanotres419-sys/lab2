@@ -1,15 +1,22 @@
 #include <stdio.h>
-#include ? ? ?
+#include <math.h>
 
-int main()
-{
-    // declare variables<-- These are comments, you can remove them if you want to
+int main(void) {
+    double px, py, qx, qy;
+    double distance;
 
-    // get user input
+    printf("x coordinate of point p: ");
+    scanf("%lf", &px);
+    printf("y coordinate of point p: ");
+    scanf("%lf", &py);
+    printf("x coordinate of point q: ");
+    scanf("%lf", &qx);
+    printf("y coordinate of point q: ");
+    scanf("%lf", &qy);
 
-    // calculate the length
+    distance = sqrt((px-qx)*(px-qx) + (py-qy)*(py-qy));
 
-    // print the result
+    printf("Distance between p and q: %f\n", distance);
 
     return 0;
 }
